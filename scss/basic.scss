@@ -6,7 +6,7 @@ $navbar-default-color: #000 !default;
 $navbar-default-link-color: #000 !default;
 $navbar-default-link-active-color: #00c0ff !default;
 $navbar-default-link-hover-color: #00c0ff !default;
-$navbar-default-link-active-bg: #dcdcdc !default;
+$navbar-default-link-active-bg: #fff !default;
 $navbar-default-link-hover-bg: #fff !default;
 $index-first-container-height: 400px !default;
 $navbar-collapse-max-height: 600px !default;
@@ -73,6 +73,7 @@ a {
         letter-spacing: .5px;
         font-size: 14px;
         span.index {
+          vertical-align: middle;
           background: url(../assets/images/common/elements.png) left top no-repeat;
           background-position-x: 3px;
           background-position-y: -78px;
