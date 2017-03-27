@@ -29,6 +29,16 @@ $(document).ready(function () {
         prevText: "",
         nextText: ""
     });
+    $('.flexslider.project-sub').flexslider({
+        fadeFirstSlide: false,
+        controlNav: false,
+        directionNav: true,
+        animationSpeed: 1000,
+        slideshowSpeed: 5000,
+        slideshow: false,
+        prevText: "",
+        nextText: "",
+    });
     $(".navbar-nav li.active").removeClass("active");
     $(".navbar-nav li." + $("body").attr("id") + "-li").addClass("active");
     $(".navbar-nav li." + $("body").attr("id") + "-li-parent").addClass("active");

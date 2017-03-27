@@ -7,7 +7,7 @@ $navbar-default-link-color: #000 !default;
 $navbar-default-link-active-color: #00c0ff !default;
 $navbar-default-link-hover-color: #00c0ff !default;
 $navbar-default-link-active-bg: #dcdcdc !default;
-$navbar-default-link-hover-bg: #dcdcdc !default;
+$navbar-default-link-hover-bg: #fff !default;
 $index-first-container-height: 400px !default;
 $navbar-collapse-max-height: 600px !default;
 
@@ -44,10 +44,7 @@ a {
         height: auto;
         padding: 0;
         display: block;
-        height: 87px;
-        width: 111px;
-        background: url("../assets/images/common/logo.jpg") no-repeat center;
-        background-size: cover;
+        margin: 15px 0;
       }
 
       @media (min-width: $screen-sm-min) {
@@ -72,9 +69,8 @@ a {
       a {
         text-transform: uppercase;
         line-height: 55px;
-        padding: 16px 10px;
+        padding: 16px;
         letter-spacing: .5px;
-        font-weight: bold;
         font-size: 14px;
         span.index {
           background: url(../assets/images/common/elements.png) left top no-repeat;
@@ -241,6 +237,7 @@ div.top-right {
 }
 
 .title-with-bg {
+  text-align: center;
   background: #ccc;
   line-height: 1.8;
 }
@@ -279,6 +276,10 @@ div.top-right {
   }
 }
 
+
+#index .second-container, #projekte .second-container{
+  overflow: hidden;
+}
 #index .fifth-container, #projekte .second-container {
   h3 {
     font-weight: bold;
@@ -384,11 +385,33 @@ div.top-right {
       margin-bottom: 50px;
       text-align: center;
     }
-    img {
+    .flexslider.project-sub{
       width: 100%;
-      display: block;
-      margin-bottom: 10px;
+      margin-bottom: 0;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 640px;
+        display: block;
+        margin-bottom: 10px;
+      }
+      ul.flex-direction-nav {
+        a {
+          height: 80px;
+          &:before, &:after {
+            content: "";
+          }
+          &.flex-prev {
+            background: url(../assets/images/index/first/thin-left.png) center center no-repeat transparent;
+          }
+          &.flex-next {
+            background: url(../assets/images/index/first/thin-right.png) center center no-repeat transparent;
+          }
+        }
+      }
     }
+
     .row {
       margin-left: 0;
       margin-right: 0;
