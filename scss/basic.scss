@@ -261,8 +261,8 @@ div.top-right {
     a {
       height: 50px;
       margin-top: -40px;
-      &:focus{
-        outline:none;
+      &:focus {
+        outline: none;
       }
       &:before, &:after {
         content: "";
@@ -277,10 +277,10 @@ div.top-right {
   }
 }
 
-
-#index .second-container, #projekte .second-container{
+#index .second-container, #projekte .second-container {
   overflow: hidden;
 }
+
 #index .fifth-container, #projekte .second-container {
   h3 {
     font-weight: bold;
@@ -294,7 +294,7 @@ div.top-right {
   }
 }
 
-#index .third-container, #index .fourth-container, #buero .third-container {
+#index .third-container, #index .fourth-container, #leistungen .first-container, #buero .third-container {
   h3 {
     font-weight: bold;
     margin-top: 30px;
@@ -328,6 +328,42 @@ div.top-right {
   }
 }
 
+#index .fourth-container, #leistungen .first-container {
+  .row {
+    .col {
+      .icon {
+        width: 80px;
+        height: 80px;
+      }
+      &:nth-child(1) {
+        .icon {
+          background-position-x: 0px;
+          background-position-y: 0px;
+        }
+      }
+      &:nth-child(2) {
+        .icon {
+          background-position-x: -80px;
+          background-position-y: 0px;
+        }
+      }
+      &:nth-child(3) {
+        .icon {
+          background-position-x: -160px;
+          background-position-y: 0px;
+        }
+      }
+      &:nth-child(4) {
+        .icon {
+          background-position-x: -240px;
+          background-position-y: 0px;
+        }
+      }
+    }
+
+  }
+}
+
 #index {
   .second-container {
     h3, h5 {
@@ -337,42 +373,6 @@ div.top-right {
     h5 {
       margin-bottom: 50px;
     }
-  }
-  .fourth-container {
-    .row {
-      .col {
-        .icon {
-          width: 80px;
-          height: 80px;
-        }
-        &:nth-child(1) {
-          .icon {
-            background-position-x: 0px;
-            background-position-y: 0px;
-          }
-        }
-        &:nth-child(2) {
-          .icon {
-            background-position-x: -80px;
-            background-position-y: 0px;
-          }
-        }
-        &:nth-child(3) {
-          .icon {
-            background-position-x: -160px;
-            background-position-y: 0px;
-          }
-        }
-        &:nth-child(4) {
-          .icon {
-            background-position-x: -240px;
-            background-position-y: 0px;
-          }
-        }
-      }
-
-    }
-
   }
 }
 
@@ -386,7 +386,7 @@ div.top-right {
       margin-bottom: 50px;
       text-align: center;
     }
-    .flexslider.project-sub{
+    .flexslider.project-sub {
       width: 100%;
       margin-bottom: 0;
       overflow: hidden;
