@@ -14,7 +14,7 @@ $(document).ready(function () {
         controlNav: false,
         directionNav: true,
         animationSpeed: 1000,
-        slideshowSpeed: 5000,
+        slideshowSpeed: 4000,
         slideshow: true,
         prevText: "",
         nextText: "",

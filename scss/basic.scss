@@ -36,7 +36,7 @@ a {
 .navbar.navbar-default {
   border-bottom: 4px solid $brand-primary;
   border-radius: 0;
-  min-height: 90px;
+  min-height: 94px;
   .container {
     padding-bottom: 0px;
     .navbar-header {
@@ -44,7 +44,7 @@ a {
         height: auto;
         padding: 0;
         display: block;
-        margin: 15px 0;
+        margin: 20px 0 0;
       }
 
       @media (min-width: $screen-sm-min) {
@@ -58,6 +58,7 @@ a {
     }
 
     .navbar-left {
+      margin-top: 38px;
       li.active {
         a {
           span.index {
@@ -68,8 +69,9 @@ a {
       }
       a {
         text-transform: uppercase;
-        line-height: 55px;
+        line-height: 35px;
         padding: 16px;
+        padding-bottom: 0;
         letter-spacing: .5px;
         font-size: 14px;
         span.index {
@@ -97,6 +99,11 @@ a {
           padding: 20px 10px;
           letter-spacing: 0px;
           font-size: 12px;
+        }
+      }
+      li.index-li {
+        a {
+          padding-top: 9px;
         }
       }
       .dropdown-menu {
@@ -158,26 +165,30 @@ div.top-right {
 }
 
 .footer {
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
   border-top: 4px solid $brand-primary;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  p {
-    text-align: left;
-    a {
-      img {
-        width: 30px;
-      }
-      &.facebook {
-        color: #295396;
+  padding-top: 20px;
+  padding-bottom: 0;
+  .container {
+    padding-bottom: 5px;
+    p {
+      text-align: left;
+      line-height: 1.1;
+      a {
+        img {
+          width: 30px;
+        }
+        &.facebook {
+          color: #295396;
+        }
       }
     }
   }
 }
 
 .main-slider-container {
-  margin-top: 90px;
+  margin-top: 94px;
   position: relative;
   margin-left: 0;
   margin-right: 0;
@@ -201,20 +212,25 @@ div.top-right {
         background-position: center center;
         position: relative;
         .flex-caption {
-          color: #222;
-          height: 50%;
+          height: 100%;
           position: absolute;
-          bottom: 60px;
           width: 100%;
           > div {
-            background: rgba(255, 255, 255, .4);
-            height: 120px;
+            color: #222;
+            height: 50%;
+            position: absolute;
+            bottom: 60px;
             width: 100%;
-            margin: auto;
-            h1 {
-              line-height: 120px;
-              font-weight: bold;
-              font-size: 44px;
+            > div {
+              background: rgba(255, 255, 255, .4);
+              height: 120px;
+              width: 100%;
+              margin: auto;
+              h1 {
+                line-height: 120px;
+                font-weight: bold;
+                font-size: 44px;
+              }
             }
           }
         }
@@ -239,7 +255,7 @@ div.top-right {
 
 .title-with-bg {
   text-align: center;
-  background: #ccc;
+  background: #E4E4E4;
   line-height: 1.8;
 }
 
@@ -391,9 +407,9 @@ div.top-right {
       width: 100%;
       margin-bottom: 0;
       overflow: hidden;
-      ul.slides{
+      ul.slides {
         height: 640px;
-        li{
+        li {
           height: 640px;
         }
       }
